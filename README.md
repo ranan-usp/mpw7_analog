@@ -9,7 +9,6 @@ The schematic of the dynamic comparator was deisgned as follows :
 ![The schematic of the comparator.](img/comparator.PNG)
 The simulation result of the comparator test bench was deisgned as follows :
 ![The simulation result of the comparator.](img/comp_sim1.PNG)
-![The simulation result of the comparator.](img/comp_sim2.PNG)
 
 ## Sampling Clock Bootstrap Circuit
 The schematic of the sample-and-hold test bench was deisgned as follows :
