@@ -1,18 +1,24 @@
-# Caravel Analog User
+# mpw7 project
+# 10bit sar adc
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![CI](https://github.com/efabless/caravel_user_project_analog/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_user_project_analog/actions/workflows/user_project_ci.yml) [![Caravan Build](https://github.com/efabless/caravel_user_project_analog/actions/workflows/caravan_build.yml/badge.svg)](https://github.com/efabless/caravel_user_project_analog/actions/workflows/caravan_build.yml)
+This project is the implementation of a 10bit sar adc using Skywater 130nm technology.
+The purpose of this project is to test the open source tools provided with the PDK and to go through all the steps of the analog design flow.
 
----
+## Dynamic Comparator
+The schematic of the dynamic comparator was deisgned as follows :
+![The schematic of the comparator.](img/comparator.PNG)
+The simulation result of the comparator test bench was deisgned as follows :
+![The simulation result of the comparator.](img/comp_sim1.PNG)
+![The simulation result of the comparator.](img/comp_sim2.PNG)
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
+## Sampling Clock Bootstrap Circuit
+The schematic of the sample-and-hold test bench was deisgned as follows :
+![The schematic of the sample-and-hold.](img/s-and-h_sch.png)
+The simulation result of the sample-and-hold test bench was deisgned as follows :
+![The simulation result of the comparator.](img/s-and-h_sim.png)
 
-## Please fill in your project documentation in this README.md file 
+## CDAC (capacitor digital-to-analog converter)
+The schematic of the cdac test bench was deisgned as follows :
+![The schematic of the cdac.](img/cdac_sch.PNG)
 
 
-:warning: | Use this sample project for analog user projects. 
-:---: | :---
-
----
-
-Refer to [README](docs/source/index.rst) for this sample project documentation. 

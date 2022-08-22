@@ -19,7 +19,8 @@ PRECHECK_ROOT?=${HOME}/mpw_precheck
 SIM ?= RTL
 
 export OPEN_PDKS_COMMIT?=41c0908b47130d5675ff8484255b43f66463a7d6
-export PDK?=sky130B
+# export PDK?=sky130B
+export PDK?=sky130A
 export PDKPATH?=$(PDK_ROOT)/$(PDK)
 # Install lite version of caravel, (1): caravel-lite, (0): caravel
 CARAVEL_LITE?=1
@@ -120,7 +121,9 @@ run-precheck: check-pdk check-precheck
 	-e PDK_ROOT=$(PDK_ROOT) \
 	-e PDKPATH=$(PDKPATH) \
 	-u $(shell id -u $(USER)):$(shell id -g $(USER)) \
-	efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_path $(PDK_ROOT)/$(PDK)"
+	efabless/mpw_precheck:latest bash -c "cd $(PRECHECK_ROOT) ; python3 mpw_precheck.py --input_directory $(INPUT_DIRECTORY) --pdk_root $(PDK_ROOT)"
+
+# --pdk_path $(PDK_ROOT)/$(PDK) 
 
 # Clean 
 .PHONY: clean
