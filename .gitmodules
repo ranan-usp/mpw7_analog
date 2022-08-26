@@ -1,3 +1,4 @@
 [submodule "caravel"]
 	path = caravel
-	url = https://github.com/efabless/caravel
+	url = git@github.com:efabless/caravel.git
+	branch = 105-relabel-mag
